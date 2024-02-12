@@ -6,7 +6,7 @@
     <title>Valentine's Day Card</title>
     <style>
         body {
-            background-color: #d3b3e0; /* Light Purple */
+            background-color: #d3b3e0;
             font-family: 'Arial', sans-serif;
             text-align: center;
         }
@@ -32,7 +32,7 @@
         }
 
         .response-button {
-            background-color: cornflowerblue; /* Light Blue */
+            background-color: cornflowerblue;
             color: #fff;
             padding: 10px 20px;
             font-size: 16px;
@@ -42,7 +42,7 @@
         }
 
         .response-button:hover {
-            background-color: #4682b4; /* Darker Blue on hover */
+            background-color: #4682b4;
         }
 
     </style>
@@ -64,7 +64,7 @@
     <script>
         function handleResponse(response) {
             if (response === 'yes') {
-                window.location.href = 'page2.html'; // Redirect to the second page
+                window.location.href = 'page2.html';
             } else if (response === 'no') {
                 moveButton();
             }
@@ -74,16 +74,15 @@
             var noButton = document.getElementById('noButton');
             var card = document.getElementById('card');
 
-            // Ask the user "Bat ayaw mo?" and redirect to YouTube after answering
             var interval = setInterval(function () {
                 var answer = prompt("Pinindot mo talga. Bat ayaw mo?");
                 if (answer) {
                     alert("Ah, kaya pala. Iba na siguro gusto mo, hindi na ako. Sakit mo naman :( ");
                     clearInterval(interval);
-                    // Redirect to a YouTube link with a specific starting time
+                    
                     window.location.href = 'https://www.youtube.com/watch?v=1sWr1UmdGx8&t=2m35s';
                 }
-            }, 1000); // Change the interval as needed
+            }, 1000);
         }
     </script>
     
