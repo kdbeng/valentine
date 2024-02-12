@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valentine's Day Card</title>
+    <style>
+        body {
+            background-color: #f9e6e6;
+            font-family: 'Georgia', serif;
+            text-align: center;
+            margin: 0;
+            overflow: hidden;
+        }
+        #card {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            padding: 30px;
+            margin: 60px auto;
+            max-width: 860px;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        #letter p:first-child {
+            text-align: left;
+        }
+        #letter p:last-child {
+            text-align: right;
+        }
+
+        #message {
+            font-size: 18px;
+            color: #c0392b;
+            margin-bottom: 20px;
+            font-family: 'Helvetica', sans-serif;
+        }
+
+        #letter {
+            font-size: 16px;
+            color: #333;
+            line-height: 1.5;
+            font-family: 'Times New Roman', serif; /* Change the font family */
+            text-align: justify; /* Justify the text */
+        }
+
+        /* Flower animation */
+        #flower {
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            animation: flowerAnimation 2s infinite;
+            cursor: pointer; /* Add cursor style to indicate it's clickable */
+        }
+
+        @keyframes flowerAnimation {
+            0% {
+                transform: translateX(-50%) translateY(0);
+            }
+            50% {
+                transform: translateX(-50%) translateY(-10px);
+            }
+            100% {
+                transform: translateX(-50%) translateY(0);
+            }
+        }
+
+        #click-text {
+            font-size: 14px;
+            color: #555;
+            margin-top: auto; /* Push to the bottom */
+            font-family: 'Times New Roman', serif; /* Change the font family */
+        }
+    </style>
+</head>
+<body>
+
+    <div id="card">
+        <h2 id="message">Happy Valentine's Day!</h2>
+        <div id="letter">
+            <p>My Dearest,</p>
+            <p>On this special day, I want to express how grateful I am meeting you <br>
+            Wishing you all the joy and happiness in the world. Happy Valentine's Day!</p>
+
+            <h5 style="font-family: 'Courier New', monospace; text-align: center;">By the way, click the heart</h5>
+
+        </div>
+        <!-- Flower image as a clickable link -->
+        <a href="https://youtu.be/75-Com9Bo_s?t=1m12s" target="1:12">
+            <img id="flower" src="heart.jpg" alt="Flower" width="50" height="50">
+        </a>
+    </div>
+</body>
+</html>
